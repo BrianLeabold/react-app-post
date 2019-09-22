@@ -20,7 +20,7 @@ export class home extends Component {
         let recentPostsMarkup = this.state.posts ? (
             this.state.posts.map((post) => <Post key={post.postId} post={post}></Post>
             )
-        ) : <p>Loading...</p>
+        ) : <h1>Loading...</h1>
         return (
             <Grid container spacing={10}>
                 <Grid item sm={8} xs={12}>
