@@ -15,7 +15,7 @@ const styles = {
         marginBottom: 20,
     },
     image: {
-        minWidth: 200,
+        minWidth: 150,
 
     },
     content: {
@@ -30,7 +30,7 @@ class Post extends Component {
         const { classes, post: { body, userName, userImage, createdAt, commentCount, likeCount } } = this.props;
         return (
             <Card className={classes.card}>
-                <CardMedia image={userImage} className={classes.image} title="Pofile Image" />
+                <CardMedia image={userImage} alt="Profile" className={classes.image} title={userName} />
                 <CardContent className={classes.content}>
                     <Typography variant="h5" component={Link} to={`/users/${userName}`}>{userName}</Typography>
                     <Typography variant="body2" color="textSecondary">{dayjs(createdAt).fromNow()}</Typography>
