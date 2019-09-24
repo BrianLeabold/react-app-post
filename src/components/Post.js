@@ -35,10 +35,7 @@ class Post extends Component {
 
     render() {
         dayjs.extend(relativeTime);
-        const { classes, user: {
-            //authenticated,
-            credentials: { userName }
-        }, post: { body, postId, userImage, createdAt, commentCount, likeCount } } = this.props;
+        const { classes, post: { body, postId, userName, userImage, createdAt, commentCount, likeCount } } = this.props;
 
 
 
