@@ -17,6 +17,10 @@ body {
 
 .nav-container svg {
   color: #fff;
+  font-size: 1.5rem
+}
+.nav-container svg :hover{
+  background: #282c34
 }
 
 a {
