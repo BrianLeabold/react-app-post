@@ -31,7 +31,21 @@ export default {
     },
     submitButton: {
         marginTop: '15px',
+        float: 'right',
         position: 'relative'
+    },
+    closeButton: {
+        float: 'right',
+        position: 'relative'
+    },
+    dialogCloseButton: {
+        position: 'absolute',
+        left: '89.3%'
+    },
+    dialogClose: {
+        position: 'absolute',
+        left: '91%',
+        top: '6%'
     },
     progress: {
         position: 'absolute',
@@ -99,5 +113,29 @@ export default {
     },
     '& .editButton': {
         float: 'right'
+    },
+    progressSpinner: {
+        position: 'absolute'
+    },
+    profileImage: {
+        maxWidth: 150,
+        height: 150,
+        borderRadius: '50%',
+        objectFit: 'cover'
+    },
+    dialogContent: {
+        padding: 20,
+        margin: 5
+    },
+
+    expandButton: {
+
+        marginTop: '0px'
+    },
+    spinnerDiv: {
+        textAlign: 'center',
+        marginTop: 50,
+        marginBottom: 50
     }
+
 };

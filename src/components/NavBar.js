@@ -6,9 +6,9 @@ import PropTypes from 'prop-types';
 //Material-ui
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
+import CreatePost from './post/CreatePost';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
-import AddIcon from '@material-ui/icons/Add';
 import HomeIcon from '@material-ui/icons/Home';
 import NotifIcon from '@material-ui/icons/Notifications';
 import themeFile from '../util/theme';
@@ -26,9 +26,9 @@ class NavBar extends Component {
                     <Toolbar className="nav-container">
                         {authenticated ? (
                             <Fragment>
-                                <IconButton className={classes.button}>
-                                    <AddIcon titleAccess="Create a new post" />
-                                </IconButton>
+
+                                <CreatePost />
+
                                 <Link to="/">
                                     <IconButton className={classes.button}>
                                         <HomeIcon titleAccess="Home" />

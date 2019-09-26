@@ -21,12 +21,9 @@ export class home extends Component {
         return (
             <Grid container spacing={10}>
                 <Grid item sm={8} xs={12}>
-                    <h2>Home</h2>
-                    <p>Content</p>
                     {recentPostsMarkup}
                 </Grid>
                 <Grid item sm={4} xs={12} id="aside">
-                    <h3>Profile</h3>
                     <Profile />
                 </Grid>
             </Grid>

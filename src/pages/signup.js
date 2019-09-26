@@ -22,7 +22,7 @@ export class signup extends Component {
             email: '',
             password: '',
             confirmPassword: '',
-            userName: '',
+            name: '',
             errors: {}
         };
     }
@@ -40,7 +40,7 @@ export class signup extends Component {
             email: this.state.email,
             password: this.state.password,
             confirmPassword: this.state.confirmPassword,
-            userName: this.state.userName
+            name: this.state.name
         }
         this.props.signupUser(newUserData, this.props.history);
     }
@@ -60,14 +60,14 @@ export class signup extends Component {
                     <Typography variant="h2" className={classes.pageTitle} title="Login">Sign-up</Typography>
                     <form noValidate onSubmit={this.handleSubmit}>
                         <TextField
-                            id="userName"
-                            name="userName"
+                            id="name"
+                            name="name"
                             type="text"
                             label="Name"
                             className={classes.textField}
-                            helperText={errors.userName}
-                            error={errors.userName ? true : false}
-                            value={this.state.userName}
+                            helperText={errors.name}
+                            error={errors.name ? true : false}
+                            value={this.state.name}
                             onChange={this.handleChange}
                             fullWidth>
                         </TextField>

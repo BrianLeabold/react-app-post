@@ -41,13 +41,13 @@ class Profile extends Component {
     render() {
         const { classes,
             user: {
-                credentials: { userName, createdAt, imageUrl, bio, website, location },
+                credentials: { name, createdAt, imageUrl, bio, website, location },
                 loading, authenticated } } = this.props;
         let profileMarkup = !loading ? (authenticated ? (
             <Paper className={classes.paper}>
                 <div className={classes.profile}>
                     <div className="image-wrapper">
-                        <img src={imageUrl} alt="Profile" title={userName} className="profile-image" />
+                        <img src={imageUrl} alt="Profile" className="profile-image" />
                         <input type="file" id="imageUpload" hidden="hidden" onChange={this.handleImageChange} />
                         <IconButton onClick={this.handleEditPicture} className="button">
                             <EditIcon titleAccess="Chage your profile photo" color="primary" />
@@ -55,8 +55,8 @@ class Profile extends Component {
                     </div>
                     <hr />
                     <div className="profile-details">
-                        <MuiLink component={Link} to={`/users/${userName}`} color="secondary" variant="h5">
-                            @{userName}
+                        <MuiLink component={Link} to={`/users/${name}`} color="secondary" variant="h5">
+                            @{name}
                         </MuiLink>
                         <hr />
                         {bio && <Typography variant="body2">{bio}</Typography>}
