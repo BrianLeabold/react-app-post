@@ -14,9 +14,9 @@ import CommentIcon from '@material-ui/icons/Comment';
 import { Link } from 'react-router-dom';
 import dayjs from 'dayjs';
 import relativeTime from 'dayjs/plugin/relativeTime';
-import LikeButton from './post/LikeButton';
-import DeletePost from './post/DeletePost';
-import PostDialog from './post/PostDialog';
+import LikeButton from './LikeButton';
+import DeletePost from './DeletePost';
+import PostDialog from './PostDialog';
 
 
 const styles = {

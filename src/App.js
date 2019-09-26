@@ -13,7 +13,7 @@ import { logoutUser, getUserData } from './redux/actions/userActions';
 import axios from 'axios';
 
 //Components
-import NavBar from './components/NavBar';
+import NavBar from './components/layout/NavBar';
 import AuthRoute from './util/AuthRoute';
 //Pages
 import home from './pages/home';

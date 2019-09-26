@@ -6,9 +6,9 @@ import EditDetails from './EditDetails';
 
 // Redux
 import { connect } from 'react-redux';
-import { logoutUser, changeImage } from '../redux/actions/userActions';
+import { logoutUser, changeImage } from '../../redux/actions/userActions';
 //Styling
-import themeFile from '../util/theme';
+import themeFile from '../../util/theme';
 import withStyles from '@material-ui/core/styles/withStyles';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';

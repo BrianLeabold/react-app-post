@@ -6,12 +6,12 @@ import PropTypes from 'prop-types';
 //Material-ui
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import CreatePost from './post/CreatePost';
+import CreatePost from '../post/CreatePost';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import HomeIcon from '@material-ui/icons/Home';
 import NotifIcon from '@material-ui/icons/Notifications';
-import themeFile from '../util/theme';
+import themeFile from '../../util/theme';
 import withStyles from '@material-ui/core/styles/withStyles';
 
 const styles = themeFile;
