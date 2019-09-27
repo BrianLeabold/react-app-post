@@ -87,8 +87,7 @@ class PostDialog extends Component {
                             color="primary"
                             variant="h5"
                             to={`/users/${userName}`}
-                        >
-                            @{userName}
+                        >{userName}
                         </Typography>
                         <hr className={classes.invisibleSeparator} />
                         <Typography variant="body2" color="textSecondary">
@@ -104,8 +103,8 @@ class PostDialog extends Component {
                         <span>{likeCount} likes</span>
                     </Grid>
                     <hr className={classes.visibleSeparator} />
-                    <CommentForm postId={postId} />
                     <Comments comments={comments} />
+                    <CommentForm postId={postId} />
                 </Grid>
             );
         return (

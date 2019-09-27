@@ -65,7 +65,7 @@ export default {
     },
     visibleSeparator: {
         width: '100%',
-        borderBottom: '1px solid #cccccc',
+        borderBottom: '1px solid rgba(0,0,0,0.1)',
         marginBottom: 20
     },
     paper: {
@@ -148,6 +148,24 @@ export default {
     },
     commentData: {
         marginLeft: 20
-    }
+    },
+    name: {
+        height: 20,
+        backgroundColor: '#1a237e',
+        width: 60,
+        margin: '0 auto 7px auto'
+    },
+    fullLine: {
+        height: 15,
+        backgroundColor: 'rgba(0,0,0,0.6)',
+        width: '100%',
+        marginBottom: 10
+    },
+    halfLine: {
+        height: 15,
+        backgroundColor: 'rgba(0,0,0,0.6)',
+        width: '50%',
+        marginBottom: 10
+    },
 
 };

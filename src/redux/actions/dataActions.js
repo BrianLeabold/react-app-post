@@ -108,6 +108,24 @@ export const deletePost = (postId) => (dispatch) => {
         .catch((err) => console.log(err));
 };
 
+export const getUserDetails = (userName) => (dispatch) => {
+    dispatch({ type: LOADING_DATA });
+    axios
+        .get(`/user/${userName}`)
+        .then((res) => {
+            dispatch({
+                type: SET_POSTS,
+                payload: res.data.posts
+            });
+        })
+        .catch(() => {
+            dispatch({
+                type: SET_POSTS,
+                payload: null
+            });
+        });
+};
+
 export const clearErrors = () => (dispatch) => {
     dispatch({ type: CLEAR_ERRORS });
 };

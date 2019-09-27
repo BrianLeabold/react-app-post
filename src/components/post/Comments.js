@@ -21,10 +21,11 @@ class Comments extends Component {
                         <Fragment key={createdAt}>
                             <Grid item sm={12}>
                                 <Grid container>
+                                    <Grid item sm={1}></Grid>
                                     <Grid item sm={2}>
                                         <img
                                             src={userImage}
-                                            alt="comment"
+                                            alt={userName}
                                             className={classes.commentImage}
                                         />
                                     </Grid>
