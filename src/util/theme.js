@@ -149,21 +149,35 @@ export default {
     commentData: {
         marginLeft: 20
     },
+    card: {
+        display: 'flex',
+        marginBottom: 20
+    },
+    cardContent: {
+        width: '100%',
+        flexDirection: 'column',
+        padding: 25
+    },
+    cover: {
+        minWidth: 150,
+        objectFit: 'cover',
+    },
     name: {
         height: 20,
+        textAlign: 'left',
         backgroundColor: '#1a237e',
         width: 60,
-        margin: '0 auto 7px auto'
+        margin: '0 0 7px 0'
     },
     fullLine: {
         height: 15,
-        backgroundColor: 'rgba(0,0,0,0.6)',
-        width: '100%',
+        backgroundColor: 'rgba(0,0,0,0.3)',
+        width: '90%',
         marginBottom: 10
     },
     halfLine: {
         height: 15,
-        backgroundColor: 'rgba(0,0,0,0.6)',
+        backgroundColor: 'rgba(0,0,0,0.3)',
         width: '50%',
         marginBottom: 10
     },

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 // Icons
 import Tooltip from '@material-ui/core/Tooltip';
+import Zoom from '@material-ui/core/Zoom';
 import IconButton from '@material-ui/core/IconButton';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import FavoriteBorder from '@material-ui/icons/FavoriteBorder';
@@ -33,14 +34,14 @@ export class LikeButton extends Component {
         const { authenticated } = this.props.user;
         const likeButton = !authenticated ? (
             <Link to="/login">
-                <Tooltip title="login to like this" placement="top">
+                <Tooltip title="login to like this" placement="top" TransitionComponent={Zoom}>
                     <IconButton>
                         <FavoriteBorder color="primary" />
                     </IconButton>
                 </Tooltip>
             </Link>
         ) : this.likedPost() ? (
-            <Tooltip title="unlike">
+            <Tooltip title="unlike" placement="top" TransitionComponent={Zoom}>
                 <IconButton onClick={this.unlikePost}>
                     <FavoriteIcon color="error" />
                 </IconButton>

@@ -10,6 +10,7 @@ import { logoutUser, changeImage } from '../../redux/actions/userActions';
 //Styling
 import themeFile from '../../util/theme';
 import withStyles from '@material-ui/core/styles/withStyles';
+import AppIcon from '../../images/BHSlogo.png';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import Paper from '@material-ui/core/Paper';
@@ -89,14 +90,14 @@ class Profile extends Component {
         ) : (
                 //Not Authenticated
                 <Paper className={classes.paper}>
-                    <Typography variant="body2" align="center" >
-                        No profile found, please login
-                </Typography>
                     <div className={classes.buttons}>
                         <Button variant="contained" color="primary" component={Link} to="/login">login</Button>
                         <Button variant="contained" color="secondary" component={Link} to="/signup">sign-up</Button>
+                        <img src={AppIcon} class="App-logo" alt="App logo" title="Consult Brian" />
                     </div>
+
                 </Paper>
+
             )) : (<h3>loading...</h3>)
 
         return profileMarkup;

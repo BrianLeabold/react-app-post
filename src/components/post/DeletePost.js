@@ -5,6 +5,9 @@ import PropTypes from 'prop-types';
 
 // MUI Stuff
 import Button from '@material-ui/core/Button';
+import IconButton from '@material-ui/core/IconButton';
+import Tooltip from '@material-ui/core/Tooltip';
+import Zoom from '@material-ui/core/Zoom';
 import Dialog from '@material-ui/core/Dialog';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import DialogActions from '@material-ui/core/DialogActions';
@@ -40,13 +43,14 @@ class DeletePost extends Component {
 
         return (
             <Fragment>
-                <Button
-                    titleaccess="delete post"
-                    onClick={this.handleOpen}
-                    className={classes.deleteButton}
-                >
-                    <DeleteOutline />
-                </Button>
+                <Tooltip title="delete post" placement="top" TransitionComponent={Zoom}>
+                    < IconButton
+                        onClick={this.handleOpen}
+                        className={classes.deleteButton}
+                    >
+                        <DeleteOutline />
+                    </IconButton>
+                </Tooltip>
                 <Dialog
                     open={this.state.open}
                     onClose={this.handleClose}

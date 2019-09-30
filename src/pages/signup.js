@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import { signupUser } from '../redux/actions/userActions';
 
 import themeFile from '../util/theme';
-import AppIcon from '../images/logo192.png';
+import AppIcon from '../images/BHSlogo.png';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import TextField from '@material-ui/core/TextField';
@@ -56,8 +56,8 @@ export class signup extends Component {
             <Grid container className={classes.formContainer}>
                 <Grid item sm />
                 <Grid item sm>
-                    <img src={AppIcon} className={classes.appIcon} alt="My React App" title="My React App" />
-                    <Typography variant="h2" className={classes.pageTitle} title="Login">Sign-up</Typography>
+                    <img src={AppIcon} class="App-logo" alt="App logo" title="Consult Brian" />
+                    <Typography variant="h3" className={classes.pageTitle} title="Login">Sign-up</Typography>
                     <form noValidate onSubmit={this.handleSubmit}>
                         <TextField
                             id="name"
